@@ -1,5 +1,12 @@
 # Filetimes
 
+[![Build Status](https://travis-ci.org/EchoJulia/Filetimes.jl.svg?branch=master)](https://travis-ci.org/EchoJulia/Filetimes.jl)
+
+[![Coverage Status](https://coveralls.io/repos/EchoJulia/Filetimes.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/EchoJulia/Filetimes.jl?branch=master)
+
+[![codecov.io](http://codecov.io/github/EchoJulia/Filetimes.jl/coverage.svg?branch=master)](http://codecov.io/github/EchoJulia/Filetimes.jl?branch=master)
+
+
 A trivial implementation of FILETIME style timestamps [1].
 
 FILETIME was apparently introduced in the Windows NT operating system
