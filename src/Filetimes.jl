@@ -18,8 +18,8 @@ end
 """
     filetime(d::Dates.DateTime)
 
-Returns the given DateTime as the number of 100 nanosecond intervals
-since January 1, 1601.
+Returns the number of 100 nanosecond intervals since January 1, 1601
+for the given DateTime.
 
 """
 function filetime(d::Dates.DateTime)
@@ -39,4 +39,18 @@ function datetime(f::Integer)
     EPOCH + Dates.Microsecond(f/10)
 end
 
+"""
+    filetime(s::AbstractString)
+
+Returns the number of 100 nanosecond intervals since January 1, 1601,
+for the given ISO8601 string.
+
+    filetime("2014-09-02T08:20:07")
+
+"""
+function filetime(s::AbstractString)
+    filetime(DateTime(s))
+end
+
+ 
 end # module
