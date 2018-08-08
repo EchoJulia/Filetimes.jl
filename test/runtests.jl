@@ -4,6 +4,7 @@ using Filetimes
     using Base.Test
 else
     using Test
+    using Dates
 end
 
 filetime()

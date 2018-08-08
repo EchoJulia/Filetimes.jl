@@ -2,6 +2,8 @@ module Filetimes
 
 export filetime, datetime, EPOCH
 
+using Dates
+
 const EPOCH =  Dates.DateTime(1601, 1, 1)
 
 """
