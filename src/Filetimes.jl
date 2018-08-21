@@ -1,3 +1,4 @@
+__precompile__()
 module Filetimes
 
 export filetime, datetime, EPOCH
