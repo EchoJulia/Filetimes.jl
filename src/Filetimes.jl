@@ -3,7 +3,10 @@ module Filetimes
 
 export filetime, datetime, EPOCH
 
-using Dates
+@static if VERSION < v"0.7.0-DEV.2005"
+else
+    using Dates
+end
 
 const EPOCH =  Dates.DateTime(1601, 1, 1)
 
