@@ -1,12 +1,8 @@
-__precompile__()
 module Filetimes
 
 export filetime, datetime, EPOCH
 
-@static if VERSION < v"0.7.0-DEV.2005"
-else
-    using Dates
-end
+using Dates
 
 const EPOCH =  Dates.DateTime(1601, 1, 1)
 
@@ -57,6 +53,5 @@ for the given ISO8601 string.
 function filetime(s::AbstractString)
     filetime(DateTime(s))
 end
-
  
 end # module
