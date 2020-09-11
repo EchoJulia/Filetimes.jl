@@ -1,0 +1,15 @@
+name = "Filetimes"
+uuid = "3549b72e-d846-5e61-81ad-7b3ef408fc17"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+
+[compat]
+julia = "≥ 0.7.0"
+
+[extras]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Dates", "Test"]
